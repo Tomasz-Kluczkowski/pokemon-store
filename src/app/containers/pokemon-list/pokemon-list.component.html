@@ -5,8 +5,8 @@
         <div class="mat-header-cell"></div>
         <div class="mat-header-cell"></div>
       </div>
-      <div class="mat-row">
-        <div class="mat-cell name">Dummy Value</div>
+      <div class="mat-row" *ngFor="let pokemon of pokemonList">
+        <div class="mat-cell name">{{ pokemon.name }}</div>
         <div class="mat-cell view-btn">
           <a mat-stroked-button>VIEW</a>
         </div>
